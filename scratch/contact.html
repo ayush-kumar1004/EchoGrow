@@ -1,0 +1,434 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Contact EchoGrow | Let's Build A Brand People Remember</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#000000",
+                        "secondary-container": "#dfe0e0",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "on-primary-container": "#848484",
+                        "primary-container": "#1b1b1b",
+                        "surface-container-high": "#e7e8e9",
+                        "inverse-surface": "#2e3132",
+                        "outline": "#7e7576",
+                        "primary-fixed": "#e2e2e2",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#d9dadb",
+                        "surface": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#00174b",
+                        "on-tertiary-fixed-variant": "#003ea8",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#497cff",
+                        "tertiary-fixed": "#dbe1ff",
+                        "on-primary-fixed-variant": "#474747",
+                        "error": "#ba1a1a",
+                        "background": "#f8f9fa",
+                        "on-surface-variant": "#4c4546",
+                        "surface-bright": "#f8f9fa",
+                        "on-secondary-fixed-variant": "#454747",
+                        "tertiary-container": "#00174b",
+                        "surface-variant": "#e1e3e4",
+                        "surface-container": "#edeeef",
+                        "on-secondary-container": "#616363",
+                        "inverse-primary": "#c6c6c6",
+                        "tertiary-fixed-dim": "#b4c5ff",
+                        "surface-container-highest": "#e1e3e4",
+                        "primary": "#000000",
+                        "on-surface": "#191c1d",
+                        "secondary-fixed": "#e2e2e2",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "surface-tint": "#5e5e5e",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#5d5f5f",
+                        "outline-variant": "#cfc4c5",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#1b1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "gutter": "24px",
+                        "stack-lg": "24px",
+                        "container-max": "1280px",
+                        "stack-md": "16px",
+                        "margin-mobile": "16px",
+                        "section-gap": "80px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-xl-mobile": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav aria-label="Main Navigation" class="bg-surface dark:bg-background border-b border-surface-variant dark:border-outline-variant sticky top-0 z-50 transition-colors duration-300 w-full">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span aria-hidden="true" class="material-symbols-outlined text-primary dark:text-on-background" style="font-variation-settings: 'FILL' 1;">graphic_eq</span>
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-on-background tracking-tight" href="#">EchoGrow</a>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-secondary dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-tertiary-fixed-dim transition-colors duration-200 font-label-md text-label-md" href="#">Services &amp; Solutions</a>
+<a class="text-secondary dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-tertiary-fixed-dim transition-colors duration-200 font-label-md text-label-md" href="#">Portfolio</a>
+<a class="text-secondary dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-tertiary-fixed-dim transition-colors duration-200 font-label-md text-label-md" href="#">How It Works</a>
+<a class="text-secondary dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-tertiary-fixed-dim transition-colors duration-200 font-label-md text-label-md" href="#">Pricing</a>
+</div>
+<div class="hidden md:block">
+<a class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity duration-200 inline-flex items-center gap-2" href="#consultation-form">
+                    Book Free Consultation
+                    <span aria-hidden="true" class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<button aria-label="Open Menu" class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Section 1: Hero -->
+<section class="pt-24 pb-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-8 lg:col-start-3 text-center z-10 relative">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container border border-surface-variant mb-8">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-label-md text-label-md text-secondary">Free Consultation Available</span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-primary mb-6 leading-tight">
+                        Let's Build A Brand People <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-on-surface-variant">Remember</span>
+</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto mb-10">
+                        Tell us about your business, product, or campaign goals — we'll recommend the right creative direction.
+                    </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto bg-primary text-on-primary px-8 py-4 rounded-full font-label-md text-label-md hover:bg-inverse-surface transition-colors shadow-[0_4px_20px_rgba(0,0,0,0.15)] flex items-center justify-center gap-2" href="#consultation-form">
+                            Book Free Consultation
+                            <span class="material-symbols-outlined text-[18px]">calendar_today</span>
+</a>
+<a class="w-full sm:w-auto bg-surface text-primary border border-surface-variant px-8 py-4 rounded-full font-label-md text-label-md hover:bg-surface-container transition-colors flex items-center justify-center gap-2" href="#portfolio">
+                            See Our Work
+                            <span class="material-symbols-outlined text-[18px]">play_circle</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Decorative abstract background elements -->
+<div class="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-tertiary-fixed opacity-30 rounded-full blur-3xl -z-10 mix-blend-multiply"></div>
+<div class="absolute top-0 right-10 w-80 h-80 bg-surface-container-highest opacity-40 rounded-full blur-3xl -z-10 mix-blend-multiply"></div>
+</section>
+<!-- Section 2: Quick Consultation Form & Section 3: Trust Cards (Bento Layout) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low border-y border-surface-variant" id="consultation-form">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Form Area (Spans 7 columns) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-[24px] p-8 md:p-10 shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-surface-variant relative overflow-hidden">
+<div class="mb-8">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-2">Tell Us About Your Brand</h2>
+<p class="font-body-md text-body-md text-secondary">Complete the details below to request a tailored strategy session.</p>
+</div>
+<form action="#" class="space-y-stack-lg" method="POST">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary" for="business-name">Business / Brand Name</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface border border-surface-variant focus:border-tertiary-container focus:ring-1 focus:ring-tertiary-container transition-all font-body-md text-body-md text-primary" id="business-name" name="business-name" placeholder="Acme Corp" required="" type="text">
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary" for="contact-name">Your Name</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface border border-surface-variant focus:border-tertiary-container focus:ring-1 focus:ring-tertiary-container transition-all font-body-md text-body-md text-primary" id="contact-name" name="contact-name" placeholder="Jane Doe" required="" type="text">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary" for="email">Email Address</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface border border-surface-variant focus:border-tertiary-container focus:ring-1 focus:ring-tertiary-container transition-all font-body-md text-body-md text-primary" id="email" name="email" placeholder="jane@example.com" required="" type="email">
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary" for="business-type">Business Type</label>
+<div class="relative">
+<select class="w-full h-12 px-4 pr-10 rounded-lg bg-surface border border-surface-variant focus:border-tertiary-container focus:ring-1 focus:ring-tertiary-container transition-all font-body-md text-body-md text-primary appearance-none bg-none" id="business-type" name="business-type">
+<option disabled="" selected="" value="">Select an option</option>
+<option value="fmcg">FMCG &amp; Products</option>
+<option value="food">Food &amp; Beverage</option>
+<option value="retail">Retail &amp; Fashion</option>
+<option value="home">Paint &amp; Home Brands</option>
+<option value="fitness">Fitness &amp; Wellness</option>
+<option value="education">Education &amp; Coaching</option>
+<option value="local">Local Business</option>
+<option value="other">Other</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-secondary pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<label class="font-label-md text-label-md text-primary block">What do you need help with?</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<label class="flex items-start gap-3 p-3 rounded-lg border border-surface-variant bg-surface hover:bg-surface-container-low cursor-pointer transition-colors group">
+<input class="mt-1 w-4 h-4 text-tertiary-container border-surface-variant rounded focus:ring-tertiary-container" name="services" type="checkbox" value="brand-recall">
+<span class="font-body-md text-body-md text-secondary group-hover:text-primary transition-colors">Brand Recall &amp; Recognition</span>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg border border-surface-variant bg-surface hover:bg-surface-container-low cursor-pointer transition-colors group">
+<input class="mt-1 w-4 h-4 text-tertiary-container border-surface-variant rounded focus:ring-tertiary-container" name="services" type="checkbox" value="custom-jingles">
+<span class="font-body-md text-body-md text-secondary group-hover:text-primary transition-colors">Custom Jingles / Ad Music</span>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg border border-surface-variant bg-surface hover:bg-surface-container-low cursor-pointer transition-colors group">
+<input class="mt-1 w-4 h-4 text-tertiary-container border-surface-variant rounded focus:ring-tertiary-container" name="services" type="checkbox" value="product-advertising">
+<span class="font-body-md text-body-md text-secondary group-hover:text-primary transition-colors">Product Advertising</span>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg border border-surface-variant bg-surface hover:bg-surface-container-low cursor-pointer transition-colors group">
+<input class="mt-1 w-4 h-4 text-tertiary-container border-surface-variant rounded focus:ring-tertiary-container" name="services" type="checkbox" value="viral-reels">
+<span class="font-body-md text-body-md text-secondary group-hover:text-primary transition-colors">Viral Reel Concepts</span>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg border border-surface-variant bg-surface hover:bg-surface-container-low cursor-pointer transition-colors group">
+<input class="mt-1 w-4 h-4 text-tertiary-container border-surface-variant rounded focus:ring-tertiary-container" name="services" type="checkbox" value="campaign-strategy">
+<span class="font-body-md text-body-md text-secondary group-hover:text-primary transition-colors">Campaign Strategy</span>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg border border-surface-variant bg-surface hover:bg-surface-container-low cursor-pointer transition-colors group">
+<input class="mt-1 w-4 h-4 text-tertiary-container border-surface-variant rounded focus:ring-tertiary-container" name="services" type="checkbox" value="growth-recommendations">
+<span class="font-body-md text-body-md text-secondary group-hover:text-primary transition-colors">Growth Recommendations</span>
+</label>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-primary block" for="goals">Tell us about your goals</label>
+<textarea class="w-full p-4 rounded-lg bg-surface border border-surface-variant focus:border-tertiary-container focus:ring-1 focus:ring-tertiary-container transition-all font-body-md text-body-md text-primary resize-y" id="goals" name="goals" placeholder="Example: We want our product brand to become more memorable through jingles and campaign ideas." rows="4"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-inverse-surface transition-colors flex items-center justify-center gap-2 group" type="submit">
+                                    Get Free Brand Audit
+                                    <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<p class="text-center font-body-md text-body-md text-secondary mt-4 text-sm">No spam • Free consultation • Response within 24–48 hrs</p>
+</div>
+</form>
+</div>
+<!-- Trust Cards Sidebar (Spans 5 columns) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="mb-2">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Why Businesses Contact EchoGrow</h3>
+<p class="font-body-md text-body-md text-secondary">We create memorable campaigns, custom ad music, and creative strategies designed for stronger brand recall.</p>
+</div>
+<!-- Bento Grid for Trust Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-surface-variant shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:border-surface-tint transition-colors flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">strategy</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Creative Strategy</h4>
+<p class="font-body-md text-body-md text-secondary text-sm">Memorable campaigns designed for stronger brand recall.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-surface-variant shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:border-surface-tint transition-colors flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">hearing</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Brand Recognition</h4>
+<p class="font-body-md text-body-md text-secondary text-sm">Creative ideas built to help customers remember your brand.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-surface-variant shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:border-surface-tint transition-colors flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">rocket_launch</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Startup-Friendly Pricing</h4>
+<p class="font-body-md text-body-md text-secondary text-sm">Flexible pricing designed around business needs.</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-surface-variant shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:border-surface-tint transition-colors flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">timer</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Fast Turnaround</h4>
+<p class="font-body-md text-body-md text-secondary text-sm">Clear timelines and collaborative execution.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4 & 5: Process and FAQ (Split Layout) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-section-gap">
+<!-- What Happens Next? -->
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">What Happens Next?</h2>
+<div class="relative pl-8 space-y-8 before:absolute before:inset-y-2 before:left-[11px] before:w-[2px] before:bg-surface-variant">
+<!-- Step 1 -->
+<div class="relative">
+<div class="absolute -left-8 w-6 h-6 rounded-full bg-surface-container-lowest border-2 border-primary flex items-center justify-center z-10">
+<span class="font-label-md text-label-md text-primary text-[10px]">1</span>
+</div>
+<h4 class="font-label-md text-label-md text-primary mb-2 pt-1">Review your business goals</h4>
+<p class="font-body-md text-body-md text-secondary">We analyze the information provided to understand your unique market position.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative">
+<div class="absolute -left-8 w-6 h-6 rounded-full bg-surface-container-lowest border-2 border-primary flex items-center justify-center z-10">
+<span class="font-label-md text-label-md text-primary text-[10px]">2</span>
+</div>
+<h4 class="font-label-md text-label-md text-primary mb-2 pt-1">Free consultation &amp; recommendations</h4>
+<p class="font-body-md text-body-md text-secondary">A direct strategy session to discuss potential directions without obligation.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative">
+<div class="absolute -left-8 w-6 h-6 rounded-full bg-surface-container-lowest border-2 border-primary flex items-center justify-center z-10">
+<span class="font-label-md text-label-md text-primary text-[10px]">3</span>
+</div>
+<h4 class="font-label-md text-label-md text-primary mb-2 pt-1">Creative planning &amp; campaign direction</h4>
+<p class="font-body-md text-body-md text-secondary">Detailed outlining of deliverables, timelines, and sonic assets.</p>
+</div>
+<!-- Step 4 -->
+<div class="relative">
+<div class="absolute -left-8 w-6 h-6 rounded-full bg-primary flex items-center justify-center z-10">
+<span class="material-symbols-outlined text-[12px] text-on-primary font-bold">check</span>
+</div>
+<h4 class="font-label-md text-label-md text-primary mb-2 pt-1">Campaign execution &amp; launch</h4>
+<p class="font-body-md text-body-md text-secondary">Production, refinement, and deployment of your new brand assets.</p>
+</div>
+</div>
+</div>
+<!-- Mini FAQ -->
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<!-- FAQ 1 -->
+<details class="group bg-surface rounded-xl border border-surface-variant overflow-hidden" open="">
+<summary class="flex justify-between items-center font-label-md text-label-md text-primary p-4 cursor-pointer hover:bg-surface-container transition-colors list-none">
+                                How quickly will we hear back?
+                                <span class="material-symbols-outlined text-secondary group-open:-rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<div class="p-4 pt-0 text-secondary font-body-md text-body-md">
+                                Most inquiries receive a response within 24–48 hours.
+                            </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface rounded-xl border border-surface-variant overflow-hidden">
+<summary class="flex justify-between items-center font-label-md text-label-md text-primary p-4 cursor-pointer hover:bg-surface-container transition-colors list-none">
+                                Is the consultation free?
+                                <span class="material-symbols-outlined text-secondary group-open:-rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<div class="p-4 pt-0 text-secondary font-body-md text-body-md">
+                                Yes. Your first consultation and creative direction discussion are completely free.
+                            </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface rounded-xl border border-surface-variant overflow-hidden">
+<summary class="flex justify-between items-center font-label-md text-label-md text-primary p-4 cursor-pointer hover:bg-surface-container transition-colors list-none">
+                                Can small businesses work with EchoGrow?
+                                <span class="material-symbols-outlined text-secondary group-open:-rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<div class="p-4 pt-0 text-secondary font-body-md text-body-md">
+                                Absolutely. We work with both small businesses and growing product brands.
+                            </div>
+</details>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Final CTA -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop text-center bg-surface-container border-y border-surface-variant relative overflow-hidden">
+<div class="max-w-3xl mx-auto relative z-10">
+<span aria-hidden="true" class="material-symbols-outlined text-[48px] text-tertiary-container mb-6 opacity-80">graphic_eq</span>
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-primary mb-4">Ready To Grow Your Brand?</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-10">Let's create something memorable.</p>
+<a class="inline-flex bg-primary text-on-primary px-10 py-4 rounded-full font-label-md text-label-md hover:scale-105 transition-transform duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.15)] items-center gap-2" href="#consultation-form">
+                    Book Free Consultation
+                    <span class="material-symbols-outlined text-[18px]">arrow_upward</span>
+</a>
+</div>
+<!-- Minimal background texture -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#000 1px, transparent 1px); background-size: 24px 24px;"></div>
+</section>
+</main>
+<!-- Footer Component from JSON -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-highest border-t border-surface-variant dark:border-outline-variant full-width">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 space-y-4">
+<div class="flex items-center gap-2">
+<span aria-hidden="true" class="material-symbols-outlined text-primary dark:text-on-background" style="font-variation-settings: 'FILL' 1;">graphic_eq</span>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-on-background">EchoGrow</span>
+</div>
+<p class="font-body-md text-body-md text-secondary dark:text-on-secondary-fixed-variant">© 2024 EchoGrow. All rights reserved. Precision branding &amp; high-fidelity growth.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-primary dark:text-on-primary-container">Services</h4>
+<ul class="space-y-2">
+<li class=""><a class="font-body-md text-body-md text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-tertiary transition-all" href="#">Brand Recall</a></li>
+<li class=""><a class="font-body-md text-body-md text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-tertiary transition-all" href="#">Custom Jingles</a></li>
+<li class=""><a class="font-body-md text-body-md text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-tertiary transition-all" href="#">Viral Campaigns</a></li>
+<li class=""><a class="font-body-md text-body-md text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-tertiary transition-all" href="#">Product Advertising</a></li>
+<li class=""><a class="font-body-md text-body-md text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-tertiary transition-all" href="#">Growth Insights</a></li></ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-primary dark:text-on-primary-container">Company</h4>
+<ul class="space-y-2"><li class=""><a class="font-body-md text-body-md text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-tertiary transition-all" href="#">About EchoGrow</a></li>
+<li class=""><a class="font-body-md text-body-md text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-tertiary transition-all" href="#">Portfolio</a></li>
+<li class=""><a class="font-body-md text-body-md text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-tertiary transition-all" href="#">Pricing</a></li>
+<li class=""><a class="font-body-md text-body-md text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-tertiary transition-all" href="#">Contact</a></li></ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-primary dark:text-on-primary-container">Connect</h4>
+<ul class="space-y-2"><li class=""><a class="font-body-md text-body-md text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-tertiary transition-all" href="mailto:hello@echogrow.co">hello@echogrow.co</a></li></ul>
+</div>
+</div>
+</footer>
+
+
+</body></html>

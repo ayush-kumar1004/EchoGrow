@@ -1,0 +1,64 @@
+version: "2"
+type: frontend
+tech_stack:
+  - nextjs
+  - typescript
+  - tailwindcss
+  - prisma
+  - sqlite
+routes:
+  - path: /
+    file: src/app/page.tsx
+    auth_required: false
+    description: Homepage
+  - path: /services
+    file: src/app/services/page.tsx
+    auth_required: false
+    description: Services page
+  - path: /portfolio
+    file: src/app/portfolio/page.tsx
+    auth_required: false
+    description: Portfolio and campaigns page
+  - path: /how-it-works
+    file: src/app/how-it-works/page.tsx
+    auth_required: false
+    description: How it works process overview
+  - path: /pricing
+    file: src/app/pricing/page.tsx
+    auth_required: false
+    description: Pricing page
+  - path: /about
+    file: src/app/about/page.tsx
+    auth_required: false
+    description: About the company
+  - path: /contact
+    file: src/app/contact/page.tsx
+    auth_required: false
+    description: Contact and lead generation form
+features:
+  - name: Navigation
+    description: Main site navigation and routing
+    files:
+      - src/app/layout.tsx
+    entry_route: /
+    user_interactions:
+      - Click navigation links in header
+      - Click footer links
+    api_calls: []
+    auth_required: false
+  - name: Lead Generation Form
+    description: Contact form for submitting business inquiries
+    files:
+      - src/app/contact/page.tsx
+    entry_route: /contact
+    user_interactions:
+      - Fill in name
+      - Fill in email
+      - Select required services
+      - Click Submit
+      - View success toast
+    api_calls:
+      - method: POST
+        endpoint: /contact (Server Action)
+    auth_required: false
+known_limitations: []

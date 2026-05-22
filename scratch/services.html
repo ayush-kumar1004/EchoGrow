@@ -1,0 +1,350 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Services &amp; Solutions — EchoGrow</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            surface: '#f8f9fa',
+            card: '#ffffff',
+            textMain: '#1a1a1a',
+            textMuted: '#666666',
+          },
+          borderRadius: {
+            '2xl': '1rem',
+            '3xl': '1.5rem',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styles">
+    body {
+      background-color: theme('colors.surface');
+      color: theme('colors.textMain');
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- BEGIN: MainHeader -->
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2 cursor-pointer">
+<i class="fa-solid fa-bullhorn text-2xl"></i>
+<span class="text-xl font-bold tracking-tight">EchoGrow</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-gray-900 font-medium" href="#">Services</a>
+<a class="text-gray-500 hover:text-gray-900 transition-colors" href="#">Portfolio</a>
+<a class="text-gray-500 hover:text-gray-900 transition-colors" href="#">AI Tools</a>
+</nav>
+<div class="flex items-center">
+<a class="hidden md:inline-flex items-center justify-center px-6 py-2 border border-gray-300 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors" href="#">
+          Contact
+        </a>
+<button class="md:hidden text-gray-500 hover:text-gray-900">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: MainContent -->
+<main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- BEGIN: Left Column (Services) -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- BEGIN: Hero Section -->
+<section class="bg-white rounded-3xl p-8 shadow-sm flex flex-col md:flex-row gap-8 justify-between items-start">
+<div class="max-w-xl">
+<h1 class="text-3xl md:text-4xl font-semibold mb-4 text-gray-900">Services &amp; Solutions</h1>
+<p class="text-gray-600 mb-8 leading-relaxed">
+            Tailored sound, visuals, and campaign strategies that make local businesses noticed. Choose a solution to see how EchoGrow transforms brand presence into measurable growth.
+          </p>
+<div class="flex items-center flex-wrap gap-4 text-sm text-gray-600">
+<span class="font-medium mr-2">Filter by business type:</span>
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 text-black focus:ring-black border-gray-300" name="business-type" type="radio">
+<span class="">All</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 text-black focus:ring-black border-gray-300" name="business-type" type="radio">
+<span class="">Restaurants</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 text-black focus:ring-black border-gray-300" name="business-type" type="radio">
+<span class="">Retail</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 text-black focus:ring-black border-gray-300" name="business-type" type="radio">
+<span class="">Salons</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 text-black focus:ring-black border-gray-300" name="business-type" type="radio">
+<span class="">Services</span>
+</label>
+</div>
+</div>
+<div class="bg-gray-50 rounded-2xl p-5 border border-gray-100 flex items-center gap-4 min-w-[240px]">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-gray-200 shrink-0">
+<img alt="Consultant" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvurwpnRGZuVxy7bzViAf-zRf94c6o5VtOpMNGIFv34zpcaKLIWTPe1UD0s3d4kyDPrU-QDmAgxTjPO0YJlStAkehxVvRpznTzJKOwYm_1y-9J_iW9yADNdom7ZT_ucgGEhNFigN0ITSiIBWB-F3XriAWgfGC5smFkzsATAxJZKV3b8CPIiDXLQ-euREtVGO0agFLlZGWS-0vYRlL-m8V8Cms8K8tdAqhe4GUkcDWuXM7bftccC2DB2a9MiQBzatKOJs4flgkLpM0">
+</div>
+<div>
+<p class="text-sm font-medium text-gray-900 mb-2">Need a quick<br>consult?</p>
+<a class="inline-block bg-black text-white text-xs px-4 py-2 rounded-full font-medium hover:bg-gray-800 transition-colors" href="#">Book 15-min</a>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Services Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Service Card 1 -->
+<article class="bg-white rounded-3xl p-6 shadow-sm border border-gray-50 flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0">
+<img alt="Branding" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL1pfvsDcljQrVjEo3_NwWrvb-lJt9jmAe4jbWlqkwmB_hjYPOeDmEt3MY84XV0mSfU6MQo5qZAhXY52GtsfbsrmKbEZfFAQRBcyBq0sV72adfagFqbEkZVYxMUaLuls_zMj5p6c-P_xrtPXwpb4N1SxrOyCH8ZvyRaUOgJ9xcQCYO8YthECRcbYo1WP606x41FxID8i3YKxBnHHrx5mZXw1IL6frQJE2X2bG3MPCMya4cwxSsQ6Z97c6N9JXLhIb5Sj4-Syeaj0U">
+</div>
+<div class="bg-gray-50 w-8 h-8 rounded-full flex items-center justify-center text-gray-700">
+<i class="fa-solid fa-palette text-sm"></i>
+</div>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Brand Recall &amp; Recognition</h3>
+<p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Creative strategies that make your business or product memorable and instantly recognizable.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-50">
+<a class="text-sm font-medium text-gray-900 hover:underline inline-flex items-center gap-1" href="#">
+              Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+<span class="text-xs text-gray-400">20–40 hrs</span>
+</div>
+</article>
+<!-- Service Card 2 -->
+<article class="bg-white rounded-3xl p-6 shadow-sm border border-gray-50 flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0">
+<img alt="Audio" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIWz-WNuQbOLgMmgUKkYzlgVxWGMC4FkdLOxXY0rwclo-jeXOjM22rYPaGMazdc-E00Ms3L-4P7xqGjoY-HeysUas7OQxU6IWNpubJVeSY7kfYzptNYRQjw9cIyGYu5C41DsIMEaw4izXjfrUrhKCD3_dO5tcGeSW5jCLcCoYipFfrR3VZ51X2JJnVO3OhxMLpuFFaAzcXHsU74ChYvWJL1W7yy5SBr6ZaQ9-2orc4xW0Ix-1Hs0JUgBNToZpctyUdJ6GH05nK3KA">
+</div>
+<div class="bg-gray-50 w-8 h-8 rounded-full flex items-center justify-center text-gray-700">
+<i class="fa-solid fa-music text-sm"></i>
+</div>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Custom Ad Music &amp; Jingles</h3>
+<p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Catchy branded audio and memorable jingles designed to stay in customers’ minds.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-50">
+<a class="text-sm font-medium text-gray-900 hover:underline inline-flex items-center gap-1" href="#">
+              Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+<span class="text-xs text-gray-400">1–2 weeks</span>
+</div>
+</article>
+<!-- Service Card 3 -->
+<article class="bg-white rounded-3xl p-6 shadow-sm border border-gray-50 flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0">
+<img alt="Video" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpo-QP2B5udR8itGVVBeytR1Vo7rKrx54IobpT-Y41amk1TiL5khKT0u906--2dFS-22bBm_ykexh6KQqlK2F6MsaqCjiezOw5ohbnfEs7419mLO8UrwvME66-9HMK7XcWPjheGgorZm-wpHZf8RuGH7f0X6WYw6Hg4-wPPk6aURYP6Ss7M7DS7N5e02uMso57KR7MIglcj8XBGNi5SFynxa-ETLmDIsTIBIQvHm9yQxtcs70OxH0rj0Yes4v6IqqaFQlIccKqDVM">
+</div>
+<div class="bg-gray-50 w-8 h-8 rounded-full flex items-center justify-center text-gray-700">
+<i class="fa-solid fa-video text-sm"></i>
+</div>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Viral Creative Concepts</h3>
+<p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">High-impact ad ideas, short-form content, and campaign concepts designed for attention and engagement.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-50">
+<a class="text-sm font-medium text-gray-900 hover:underline inline-flex items-center gap-1" href="#">
+              Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+<span class="text-xs text-gray-400">1–3 concepts</span>
+</div>
+</article>
+<!-- Service Card 4 -->
+<article class="bg-white rounded-3xl p-6 shadow-sm border border-gray-50 flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0">
+<img alt="Campaigns" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6pSJwjfUIkKPgPDlSDT7DHOPizp5Tuu6M6BIeQczCRyekP8pNzEUoIRV_nE4Zk4cIBnPYVcbhtEwFHlNiiD_uSH5GkNrQh2cJFegU9QvMz9cHQR-ZXWleV-Bv9dc4w418jdSkm5oWacC6hewFBej0rHQz-f4Svd1FEJ_kI80JGQDUqfrqVJzRGJSubX-SxOotm6_7LJgJeIwFelARCh7Nyt6Fw6nq8M7HW7_1DOqfBsJt3-YqZBqP7I0RSXgJBc_w1lPzLTrw58U">
+</div>
+<div class="bg-gray-50 w-8 h-8 rounded-full flex items-center justify-center text-gray-700">
+<i class="fa-solid fa-bullhorn text-sm"></i>
+</div>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Product &amp; Brand Advertising</h3>
+<p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Creative campaigns for businesses, products, FMCG brands, and consumer products.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-50">
+<a class="text-sm font-medium text-gray-900 hover:underline inline-flex items-center gap-1" href="#">
+              Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+<span class="text-xs text-gray-400">Campaigns from $899</span>
+</div>
+</article>
+<!-- Service Card 5 -->
+<article class="bg-white rounded-3xl p-6 shadow-sm border border-gray-50 flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0">
+<img alt="Insights" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaEfwdkvdhPlVfRvHTxXL9btJhcLoRn5FX7940t40kFWeVGIsYQwsJ9ZtVQLfp9xP1EUbGX_-o0fIXHefZoIiW9_qEF2-l_nVH0CZ35iHORuiVPCkDKj0ucBWYbIVysMSGNkmMMCeE1RpYyE8DDwNwYT1wN6GZu2b2ZMM5grrQ6cnu0Ey0RAoY3We2Bskx7wmo1fxJzTuedPzwo8rAu8K_Rskt2GkA9Z96NAQczzSp8rTL5wGPGLoFyZ2pyfjVRvSZzGGn1ZRGjXw">
+</div>
+<div class="bg-gray-50 w-8 h-8 rounded-full flex items-center justify-center text-gray-700">
+<i class="fa-solid fa-chart-line text-sm"></i>
+</div>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Growth Insights &amp; Campaign Tracking</h3>
+<p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Simple performance insights to understand what creative campaigns are working.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-50">
+<a class="text-sm font-medium text-gray-900 hover:underline inline-flex items-center gap-1" href="#">
+              Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+<span class="text-xs text-gray-400">Monthly reports</span>
+</div>
+</article>
+<!-- Service Card 6 -->
+<article class="bg-white rounded-3xl p-6 shadow-sm border border-gray-50 flex flex-col h-full hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0">
+<img alt="Support" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArav0jq2AzkoKVlUfyYn1Od5zvsL23JC-ibWejh681q2UMEbC2A4Zz-pgsj37IvF8PCjSfcvHYWRYjCwALaFwSkKjzajWWuAm5sx1KalOhEPevYQLmOYZfD_wp7RZyXCEtSEkM07GD67H0WFpUgp-AvgPPDmmNkx7Iw1b-YgfB50eHwK3qHB64p6KAwRcqjOIXZ-c4nNbPMZJyPIh8z1_CkQB97AtQkRiJKIsgWlrgs889WclBOO2CJbCYAgLoofsZQaF5Re_Avg0">
+</div>
+<div class="bg-gray-50 w-8 h-8 rounded-full flex items-center justify-center text-gray-700">
+<i class="fa-solid fa-screwdriver-wrench text-sm"></i>
+</div>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Creative Support &amp; Campaign Add-ons</h3>
+<p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Extra support including ad copy, visuals, branding ideas, and campaign refinement.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-50">
+<a class="text-sm font-medium text-gray-900 hover:underline inline-flex items-center gap-1" href="#">
+              Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+<span class="text-xs text-gray-400">On-demand</span>
+</div>
+</article>
+</section>
+<!-- END: Services Grid -->
+<!-- BEGIN: Micro Case -->
+<section class="bg-white rounded-3xl p-8 shadow-sm border border-gray-50 flex flex-col md:flex-row items-center gap-8 justify-between mt-4">
+<div class="flex gap-6 items-start flex-1">
+<div class="w-16 h-16 rounded-full overflow-hidden shrink-0">
+<img alt="Riverside Kitchen" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe14S64dHUFraufEG-HRJXjRnjZq6sN0LLtWKkLoxLuae3cEZj4w_pqfzQoWm-gQONqfgPOQXe87Q0EyyK_5nkFhZlm7PfRlQlISvrwVvaJYYBtOTwouI8Lf5MqGoo5POBF7GZcoDmJ6d73ft-QMcXAxdtwhrXpFZSn7N4D9QDOAsWOntJc78MLXuoE2v4WhdLq1fI8xdayrQmDnRl6A2ViFnxr1XcW5doeDeJNGgalILQEbE3OV7J2eBIIbqXG8JfnZVN3R87zwY">
+</div>
+<div>
+<div class="text-xs text-gray-500 mb-2 uppercase tracking-wider font-semibold">Micro Case — Riverside Kitchen</div>
+<p class="text-gray-800 text-lg md:text-xl font-medium leading-tight mb-3">
+              "We partnered with EchoGrow for a seasonal reel + local ad jingle. Within 6 weeks footfall rose and midweek covers increased by 38%."
+            </p>
+<div class="text-xs text-gray-400">Owner: Marco Li • Location: Elm Street</div>
+</div>
+</div>
+<div class="shrink-0 text-center md:text-right flex flex-col items-center md:items-end">
+<div class="text-xs text-gray-500 uppercase tracking-wider font-semibold mb-1">Result</div>
+<div class="text-4xl font-bold text-gray-900 mb-1">+38%</div>
+<div class="text-lg text-gray-600 mb-4">footfall</div>
+<a class="inline-block bg-black text-white text-sm px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors" href="#">Explore Packages</a>
+</div>
+</section>
+<!-- END: Micro Case -->
+</div>
+<!-- END: Left Column -->
+<!-- BEGIN: Right Column (Sidebar) -->
+<aside class="lg:col-span-4 flex flex-col gap-6">
+<!-- Explore Packages -->
+<div class="bg-white rounded-3xl p-6 shadow-sm border border-gray-50">
+<h3 class="text-gray-600 font-medium mb-4">Explore Packages</h3>
+<div class="rounded-xl overflow-hidden mb-4 bg-gray-100 h-32 w-full relative">
+<!-- Placeholder for the package collage image -->
+<img alt="Package Options" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwnP_56hkIXIYLthCgZZUBLcAlQIbyvZ4XUtF5p2Dm-uZjgVW3RwZQdAVIjSoIFh48DUb5opuPN39VA1X7c2nx-jdsP7eo9XXUgI8m3gke9ZezGZr7OdWOtvzV-FQXX6y7xe-1b-lUl7zG4ZjCQS-Zg9H2n8KNMVFrHTDpu5GrTdYxJb8NOzjH1rn6pCXGXT7uEFZF6jrapdxhem5wEFV1BT2IBcLX_AX8iWM7zV3GX1178AxXNiD6lqNFr1rXIRKLy_zDaWl4nvk">
+</div>
+<div class="flex items-center justify-between">
+<div>
+<div class="font-semibold text-gray-900 text-lg">Starter</div>
+<div class="text-sm text-gray-500">$499 / month</div>
+</div>
+<a class="border border-gray-300 rounded-full px-4 py-1.5 text-sm font-medium hover:bg-gray-50 transition-colors" href="#">See Plans</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="bg-white rounded-3xl p-6 shadow-sm border border-gray-50">
+<h3 class="text-gray-900 font-medium mb-4">Quick Links</h3>
+<ul class="space-y-3 text-sm text-gray-600">
+<li class=""><a class="hover:text-gray-900 transition-colors" href="#">How It Works</a></li>
+<li class=""><a class="hover:text-gray-900 transition-colors" href="#">Portfolio &amp; Case Studies</a></li>
+<li class=""><a class="hover:text-gray-900 transition-colors" href="#">Pricing &amp; Plans</a></li>
+<li class=""><a class="hover:text-gray-900 transition-colors" href="#">AI-Powered Tools</a></li>
+</ul>
+</div>
+<!-- Local Results Snapshot -->
+<div class="bg-white rounded-3xl p-6 shadow-sm border border-gray-50">
+<h3 class="text-gray-600 font-medium mb-4 text-sm">Local Results Snapshot</h3>
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-gray-200 shrink-0">
+<img alt="Elm Street Boutique" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGGxFxhxN5UZ58JNYRcuVstgmfjFuLf-PR12s-4nNaJ45M1OrlDisoMnzmDOuP99gMebzv-zBv8LV9keoc08pj_MLanmpIfM39zIwaAlCpsrPKFQ_RhNZQY_yzCpAghqSozEygONhGdu4ypQicr2ol1U2gfaGkSFtOIy4tBAdc3BPiNeg2ef_ahteNSHEZJSrWyZQ5j_wIsZKYcfFiiShA0-OOAh6Ydo9U2Z8iXUgFmypdnZKlCsc27uznuroo1TLlKng2go_zeuQ">
+</div>
+<div>
+<div class="font-medium text-sm text-gray-900">Elm Street Boutique</div>
+<div class="text-xs text-gray-500">+24% weekend revenue</div>
+</div>
+</div>
+<a class="inline-block border border-gray-300 rounded-full px-4 py-1.5 text-sm font-medium hover:bg-gray-50 transition-colors" href="#">See Case Study</a>
+</div>
+<!-- Mini Contact -->
+<div class="bg-white rounded-3xl p-6 shadow-sm border border-gray-50">
+<h3 class="text-gray-600 font-medium mb-4 text-sm">Mini Contact</h3>
+<form class="flex flex-col gap-3">
+<input class="w-full border border-gray-200 rounded-full px-4 py-2 text-sm focus:ring-black focus:border-black placeholder-gray-400" placeholder="Email address" type="email">
+<button class="self-end bg-black text-white text-sm px-6 py-2 rounded-full font-medium hover:bg-gray-800 transition-colors" type="submit">Get Quote</button>
+</form>
+</div>
+</aside>
+<!-- END: Right Column -->
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: MainFooter -->
+<footer class="bg-white border-t border-gray-100 py-12 mt-auto">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-1">
+<div class="text-lg font-bold mb-4">EchoGrow</div>
+<p class="text-sm text-gray-500 leading-relaxed">
+          Local-first creative and audio campaigns that get results. Offices in three cities.
+        </p>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-4 text-sm">Services</h4>
+<ul class="space-y-2 text-sm text-gray-500">
+<li class=""><a class="hover:text-gray-900" href="#">About EchoGrow</a></li>
+<li class=""><a class="hover:text-gray-900" href="#">About EchoGrow</a></li>
+<li class=""><a class="hover:text-gray-900" href="#">About EchoGrow</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-4 text-sm">Company</h4>
+<ul class="space-y-2 text-sm text-gray-500">
+<li class=""><a class="hover:text-gray-900" href="#">About EchoGrow</a></li>
+<li class=""><a class="hover:text-gray-900" href="#">About EchoGrow</a></li>
+<li class=""><a class="hover:text-gray-900" href="#">About EchoGrow</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-4 text-sm">Follow</h4>
+<div class="flex items-center gap-4 text-gray-500">
+<a class="hover:text-gray-900" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a class="hover:text-gray-900" href="#"><i class="fa-brands fa-instagram"></i></a>
+<a class="hover:text-gray-900" href="#"><i class="fa-brands fa-twitter"></i></a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+
+
+
+
+</body></html>

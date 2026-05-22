@@ -1,0 +1,980 @@
+[
+  {
+    "id": "TC001",
+    "title": "Submit a complete business inquiry",
+    "description": "A visitor can complete the contact form with required details and receive a success confirmation.",
+    "category": "Lead Generation Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the name field with a valid full name"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the business name field with a valid business name"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the business type field with a valid business type"
+      },
+      {
+        "type": "action",
+        "description": "Select at least one required service"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the goals field with a valid project goal"
+      },
+      {
+        "type": "action",
+        "description": "Submit the form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a success confirmation is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC002",
+    "title": "Navigate through the main site pages from the header",
+    "description": "This verifies that a visitor can use the header navigation to move across the core site pages and reach the contact page from anywhere on the site.",
+    "category": "Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the header link to view the services page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the services page is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click the header link to view the portfolio page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the portfolio page is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click the header link to view the how it works page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the how it works page is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click the header link to view the pricing page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the pricing page is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click the header link to view the about page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the about page is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click the header link to view the contact page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact page is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Submit a business inquiry from the homepage CTA",
+    "description": "This verifies that a visitor can move from the homepage into contact lead generation and successfully submit the required inquiry form.",
+    "category": "Homepage",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click a homepage call to action that leads to the contact page"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the name field with a valid full name"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the message field with a business inquiry"
+      },
+      {
+        "type": "action",
+        "description": "Select a service from the service options"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a success confirmation is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "Show validation when required contact fields are missing",
+    "description": "This verifies that the contact form blocks submission when required information is omitted and shows validation feedback.",
+    "category": "Contact",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form without filling required fields"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify validation errors are visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the form is not submitted"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC005",
+    "title": "Show validation when a required field is missing",
+    "description": "A visitor gets a validation error when submitting the contact form without completing a required field.",
+    "category": "Lead Generation Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the name field with a valid full name"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Leave one required field empty"
+      },
+      {
+        "type": "action",
+        "description": "Select at least one required service"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the goals field with a valid project goal"
+      },
+      {
+        "type": "action",
+        "description": "Submit the form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a validation error is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC006",
+    "title": "Show validation for an invalid email address",
+    "description": "A visitor gets an email validation error when the contact form is submitted with an invalid email format.",
+    "category": "Lead Generation Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the name field with a valid full name"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with an invalid email address"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the business name field with a valid business name"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the business type field with a valid business type"
+      },
+      {
+        "type": "action",
+        "description": "Select at least one required service"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the goals field with a valid project goal"
+      },
+      {
+        "type": "action",
+        "description": "Submit the form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an email validation error is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC007",
+    "title": "Reach key pages from the footer navigation",
+    "description": "This verifies that a visitor can use the footer navigation to reach linked destination pages from the homepage.",
+    "category": "Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "action",
+        "description": "Click the footer link to view the services page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the services page is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Navigate back to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "action",
+        "description": "Click the footer link to view the portfolio page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the portfolio page is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC008",
+    "title": "Show validation for an invalid contact email",
+    "description": "This verifies that the contact form rejects an invalid email address and displays email validation feedback.",
+    "category": "Contact",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the name field with a valid full name"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with an invalid email address"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the message field with a business inquiry"
+      },
+      {
+        "type": "action",
+        "description": "Select a service from the service options"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an email validation error is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the form is not submitted"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC009",
+    "title": "Submit a portfolio inquiry from the portfolio page",
+    "description": "This verifies that a visitor can request follow-up from the portfolio page and receive a success confirmation after submitting the inquiry form.",
+    "category": "Portfolio",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /portfolio"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the message field with a portfolio inquiry"
+      },
+      {
+        "type": "action",
+        "description": "Submit the portfolio inquiry form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a success confirmation is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC010",
+    "title": "Reach the contact form from the homepage CTA",
+    "description": "A visitor can start on the homepage and use the call to action to reach the contact page for lead generation.",
+    "category": "Lead Generation Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the primary call to action to contact the team"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact page is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC011",
+    "title": "Show validation on a partially completed contact form",
+    "description": "This verifies that partially completed contact submissions still surface required-field validation before the form can be sent.",
+    "category": "Contact",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the name field with a valid full name"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify required-field validation errors are visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the form is not submitted"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC012",
+    "title": "Browse services and filter the list by category",
+    "description": "This verifies that a visitor can review services, narrow them by category, and see the filtered results update.",
+    "category": "Services Overview",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "action",
+        "description": "Select a service category filter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the filtered service list is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify service cards remain visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC013",
+    "title": "Submit a portfolio inquiry successfully",
+    "description": "A visitor can enter an email address in the portfolio inquiry form and receive a success confirmation after submitting.",
+    "category": "Portfolio and Campaign Examples",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /portfolio"
+      },
+      {
+        "type": "action",
+        "description": "Enter a valid email address into the inquiry form"
+      },
+      {
+        "type": "action",
+        "description": "Submit the inquiry form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a success confirmation is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC014",
+    "title": "View portfolio campaigns and filter by category",
+    "description": "This verifies that a visitor can browse portfolio examples and narrow the visible campaigns by category.",
+    "category": "Portfolio",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /portfolio"
+      },
+      {
+        "type": "action",
+        "description": "Select a portfolio category filter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the filtered campaign list is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify campaign cards are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC015",
+    "title": "Compare pricing options and continue to contact",
+    "description": "This verifies that a visitor can review pricing information and follow a call to action into the contact flow.",
+    "category": "Pricing",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /pricing"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify pricing cards are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the free-features section is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click a pricing page call to action that leads to the contact page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact page is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC016",
+    "title": "Browse portfolio campaigns by category",
+    "description": "A visitor can open the portfolio page, narrow campaign examples with a category filter, and see the filtered items update.",
+    "category": "Portfolio and Campaign Examples",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /portfolio"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify campaign cards are displayed"
+      },
+      {
+        "type": "action",
+        "description": "Select a campaign category filter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the displayed portfolio items update to match the selected category"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC017",
+    "title": "Review the homepage value proposition and trust signals",
+    "description": "A visitor can scan the homepage hero, trust indicators, and service highlights to understand the offering.",
+    "category": "Homepage",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Review the hero section"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the trust indicators and service highlights"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the value proposition and supporting content are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC018",
+    "title": "Review the homepage hero trust and service sections",
+    "description": "This verifies that the homepage presents the core value proposition, trust indicators, service highlights, and a clear route onward.",
+    "category": "Homepage",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the hero section is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify trust indicators and service highlights are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC019",
+    "title": "Reach the contact form from the services page CTA",
+    "description": "A visitor can review services and use the page call to action to open the contact page.",
+    "category": "Lead Generation Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "action",
+        "description": "Click the call to action to request a quote or consultation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact page is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC020",
+    "title": "Use services page CTA to continue to contact",
+    "description": "This verifies that a visitor evaluating services can click through to the contact destination to request follow-up.",
+    "category": "Services Overview",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "action",
+        "description": "Click a services page call to action that leads to the contact page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact page is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact form is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC021",
+    "title": "Review the how-it-works process and FAQ interaction",
+    "description": "A visitor can review the five-step process and expand then collapse a FAQ item on the how-it-works page.",
+    "category": "How It Works Overview",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /how-it-works"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the five-step process overview is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Expand a FAQ item"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the FAQ answer is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Collapse the same FAQ item"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the FAQ answer is hidden"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC022",
+    "title": "Compare pricing cards and free features",
+    "description": "A visitor can review pricing options and the free features section on the pricing page.",
+    "category": "Pricing",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /pricing"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify pricing cards are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the free features section is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC023",
+    "title": "Evaluate the process overview and FAQs on how it works",
+    "description": "This verifies that a visitor can review the five-step process and expand the FAQs to understand how the service works.",
+    "category": "How It Works",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /how-it-works"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the five-step process is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Expand a frequently asked question"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the FAQ answer is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC024",
+    "title": "Use pricing CTA to open contact destination",
+    "description": "A visitor can move from the pricing page into the contact destination through the page call to action.",
+    "category": "Pricing",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /pricing"
+      },
+      {
+        "type": "action",
+        "description": "Click the call to action that leads to contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact page is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC025",
+    "title": "Review the full how-it-works process and FAQs",
+    "description": "A visitor can read the five-step process and expand FAQ answers before moving on to contact.",
+    "category": "How It Works",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /how-it-works"
+      },
+      {
+        "type": "action",
+        "description": "Review the process steps"
+      },
+      {
+        "type": "action",
+        "description": "Expand an FAQ item"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the process overview is displayed and the expanded FAQ answer is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC026",
+    "title": "Move from how it works into lead generation",
+    "description": "This verifies that a visitor can use the how it works page call to action to reach the contact form and begin an inquiry.",
+    "category": "How It Works",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /how-it-works"
+      },
+      {
+        "type": "action",
+        "description": "Click a how it works page call to action that leads to the contact page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact page is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact form is visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC027",
+    "title": "Use how-it-works CTA to open contact destination",
+    "description": "A visitor can move from the how-it-works page into the contact destination through the page call to action.",
+    "category": "How It Works Overview",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /how-it-works"
+      },
+      {
+        "type": "action",
+        "description": "Click the call to action that leads to contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact page is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC028",
+    "title": "Use the how-it-works CTA to start an inquiry",
+    "description": "A visitor can move from the process overview into the contact page using the page call to action.",
+    "category": "How It Works",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /how-it-works"
+      },
+      {
+        "type": "action",
+        "description": "Click the call to action to start a project"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact page is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC029",
+    "title": "Submit the portfolio inquiry email form",
+    "description": "A visitor can submit the portfolio inquiry form and receive a success confirmation.",
+    "category": "Portfolio",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /portfolio"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the inquiry email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Submit the portfolio inquiry form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a success confirmation is visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC030",
+    "title": "Review the about page story and industries served",
+    "description": "This verifies that a visitor can learn the company mission, story, and industries served from the about page.",
+    "category": "About",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the mission and story content is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the industries served and process overview are displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC031",
+    "title": "Show email validation on portfolio inquiry form",
+    "description": "A visitor sees validation feedback when submitting the portfolio inquiry form with an invalid email address.",
+    "category": "Portfolio and Campaign Examples",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /portfolio"
+      },
+      {
+        "type": "action",
+        "description": "Enter an invalid email address into the inquiry form"
+      },
+      {
+        "type": "action",
+        "description": "Submit the inquiry form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an email validation error is visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC032",
+    "title": "Handle empty portfolio email submission",
+    "description": "A visitor sees validation feedback when submitting the portfolio inquiry form without providing an email address.",
+    "category": "Portfolio and Campaign Examples",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /portfolio"
+      },
+      {
+        "type": "action",
+        "description": "Submit the inquiry form without entering an email address"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an email validation error is visible"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC033",
+    "title": "Show validation for an invalid portfolio inquiry email",
+    "description": "A visitor gets an email validation error when submitting the portfolio inquiry form with an invalid address.",
+    "category": "Portfolio",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /portfolio"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the inquiry email field with an invalid email address"
+      },
+      {
+        "type": "action",
+        "description": "Submit the portfolio inquiry form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an email validation error is visible"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC034",
+    "title": "Handle FAQ toggles without losing the open answer",
+    "description": "This verifies that repeatedly expanding and collapsing an FAQ leaves the answer visibility in a stable state for the visitor.",
+    "category": "How It Works",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /how-it-works"
+      },
+      {
+        "type": "action",
+        "description": "Expand a frequently asked question"
+      },
+      {
+        "type": "action",
+        "description": "Collapse the same frequently asked question"
+      },
+      {
+        "type": "action",
+        "description": "Expand the same frequently asked question again"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the FAQ answer is displayed"
+      }
+    ],
+    "priority": "Low"
+  }
+]

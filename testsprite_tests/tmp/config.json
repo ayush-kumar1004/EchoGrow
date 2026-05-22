@@ -1,0 +1,17 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3000",
+  "executionArgs": {
+    "projectName": "EchoGrow",
+    "projectPath": "f:\\EchoGrow",
+    "testIds": [],
+    "additionalInstruction": "Verify that services and portfolio category filters work, portfolio inquiry form submits with email and message, and how-it-works buttons navigate successfully.",
+    "serverMode": "development",
+    "envs": {
+      "API_KEY": "sk-user-vJGj3uFSR0drJAjAO5tCEg0sTIgIExD4sUZhyL59n8AMDGkjXWwbW0YE1qOdOMKuA1Ke91CZcPyQziDx4LkJRYH5jAj3eyRzOevpN-zrzpd3hZB60ooXff4Yt9yQPnJ68Ak"
+    }
+  },
+  "serverPort": 54221
+}
