@@ -4,6 +4,9 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 const MODEL_PRIMARY = "gemini-2.5-flash";
 const MODEL_FALLBACK = "gemini-2.5-pro";
 
+export const maxDuration = 60;
+
+
 // Strict JSON schema for campaign generator output using any to bypass type conflicts
 const campaignResponseSchema: any = {
   type: "object",
