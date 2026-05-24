@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { verifyAdminSession } from "@/lib/auth";
 import { logoutAdminAction } from "@/actions/admin";
+import MobileMenu from "./MobileMenu";
 
 export default async function Navbar() {
   const isAuthorized = await verifyAdminSession();
 
   return (
     <nav className="w-full px-6 md:px-12 py-6 flex items-center justify-between bg-white border-b border-gray-100">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-4">
+        <MobileMenu />
         <Link href="/" className="flex items-center gap-2" aria-label="EchoGrow Home">
           <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" viewBox="0 0 24 24">
             <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
