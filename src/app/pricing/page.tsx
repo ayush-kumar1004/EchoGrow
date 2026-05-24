@@ -307,57 +307,7 @@ export default function PricingPage() {
         </p>
       </section>
 
-      {/* Try EchoGrow AI Free */}
-      <section className="py-8">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">Try EchoGrow AI Free</h2>
-          <p className="text-base text-gray-600 mt-2">Generate ad scripts, jingle directions, and viral campaign ideas before working with us.</p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white border border-gray-200/80 rounded-3xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
-            <div className="space-y-4">
-              <h3 className="text-lg font-bold text-gray-900">FREE Brand Script Generator</h3>
-              <p className="text-gray-600 text-xs leading-relaxed">
-                Generate reel ideas, ad hooks, and campaign concepts.
-              </p>
-            </div>
-            <div className="mt-6">
-              <Link href="/tools" className="inline-flex w-full justify-center border border-gray-300 text-gray-900 text-xs font-bold py-2.5 rounded-full hover:bg-gray-50 transition-colors">
-                Generate Script
-              </Link>
-            </div>
-          </div>
 
-          <div className="bg-white border border-gray-200/80 rounded-3xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
-            <div className="space-y-4">
-              <h3 className="text-lg font-bold text-gray-900">FREE Jingle Direction Generator</h3>
-              <p className="text-gray-600 text-xs leading-relaxed">
-                Get custom jingle moods, music vibe suggestions, and branding ideas.
-              </p>
-            </div>
-            <div className="mt-6">
-              <Link href="/tools" className="inline-flex w-full justify-center border border-gray-300 text-gray-900 text-xs font-bold py-2.5 rounded-full hover:bg-gray-50 transition-colors">
-                Try Free
-              </Link>
-            </div>
-          </div>
-
-          <div className="bg-white border border-gray-200/80 rounded-3xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
-            <div className="space-y-4">
-              <h3 className="text-lg font-bold text-gray-900">FREE Viral Campaign Finder</h3>
-              <p className="text-gray-600 text-xs leading-relaxed">
-                Generate viral campaign angles for your business.
-              </p>
-            </div>
-            <div className="mt-6">
-              <Link href="/tools" className="inline-flex w-full justify-center border border-gray-300 text-gray-900 text-xs font-bold py-2.5 rounded-full hover:bg-gray-50 transition-colors">
-                Generate Ideas
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <CTASection />
 

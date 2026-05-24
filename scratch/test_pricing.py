@@ -135,7 +135,7 @@ async def run_tests():
         # TEST 6: Verify Links redirect to /tools
         # ----------------------------------------------------
         print("\n--- Test 6: Verify Free Tools Redirect Links ---")
-        script_gen_btn = page.locator("a:has-text('Generate Script')").first
+        script_gen_btn = page.locator("a:has-text('Generate Ideas')").first
         href = await script_gen_btn.get_attribute("href")
         print(f"   Tools Generator Link Href: '{href}'")
         if href == "/tools":
