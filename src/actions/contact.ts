@@ -34,6 +34,7 @@ export async function submitContactForm(formData: FormData) {
 
     return { success: true, message: "Thank you! Your request has been received." };
   } catch (error) {
+    console.error("Error in submitContactForm:", error);
     if (error instanceof z.ZodError) {
       return { success: false, message: error.issues[0].message };
     }
@@ -58,6 +59,7 @@ export async function subscribeEmail(formData: FormData) {
 
     return { success: true, message: "Thank you for subscribing!" };
   } catch (error) {
+    console.error("Error in subscribeEmail:", error);
     if (error instanceof z.ZodError) {
       return { success: false, message: error.issues[0].message };
     }
@@ -100,6 +102,7 @@ export async function submitPortfolioInquiry(formData: FormData) {
 
     return { success: true, message: "Thank you for your inquiry." };
   } catch (error) {
+    console.error("Error in submitPortfolioInquiry:", error);
     if (error instanceof z.ZodError) {
       return { success: false, message: error.issues[0].message };
     }

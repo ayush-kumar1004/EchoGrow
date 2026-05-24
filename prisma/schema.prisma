@@ -4,7 +4,7 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -26,4 +26,20 @@ model Subscriber {
   id        String   @id @default(cuid())
   email     String   @unique
   createdAt DateTime @default(now())
+}
+
+model GeneratedCampaign {
+  id                  String   @id @default(cuid())
+  email               String?
+  creativeType        String
+  businessType        String
+  campaignGoal        String
+  creativeStyle       String
+  targetAudience      String   // Stored as JSON string
+  language            String
+  inspirationBrands   String?
+  businessDescription String
+  extraDirection      String?
+  generatedScript     String   // Stored as JSON string
+  createdAt           DateTime @default(now())
 }

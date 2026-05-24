@@ -22,7 +22,7 @@ export default function CTASection() {
           </div>
           <h3 className="text-lg font-bold text-gray-900 mb-2">FREE Jingle Idea Generator</h3>
           <p className="text-sm text-gray-600 mb-6 flex-grow">Get ad hook ideas and jingle concepts for your brand.</p>
-          <Link href="/contact" className="inline-block bg-black text-white text-sm px-5 py-2.5 rounded-full font-medium hover:bg-gray-800 transition-colors">Try Free</Link>
+          <Link href="/tools" className="inline-block bg-black text-white text-sm px-5 py-2.5 rounded-full font-medium hover:bg-gray-800 transition-colors">Try Free</Link>
         </div>
         <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100 flex flex-col h-full items-start">
           <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-gray-800 mb-4">
@@ -30,7 +30,7 @@ export default function CTASection() {
           </div>
           <h3 className="text-lg font-bold text-gray-900 mb-2">FREE Viral Reel Ideas</h3>
           <p className="text-sm text-gray-600 mb-6 flex-grow">Generate engaging reel ideas tailored to your audience.</p>
-          <Link href="/contact" className="inline-block bg-black text-white text-sm px-5 py-2.5 rounded-full font-medium hover:bg-gray-800 transition-colors">Generate Ideas</Link>
+          <Link href="/tools" className="inline-block bg-black text-white text-sm px-5 py-2.5 rounded-full font-medium hover:bg-gray-800 transition-colors">Generate Ideas</Link>
         </div>
       </div>
     </section>

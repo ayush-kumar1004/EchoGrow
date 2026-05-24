@@ -45,6 +45,12 @@ export default function Footer() {
         </div>
         
       </div>
+
+      <div className="max-w-[1440px] mx-auto mt-12 pt-8 border-t border-gray-100 text-xs text-gray-400">
+        <Link href="/login" className="hover:text-gray-500 transition-colors inline-block cursor-default">
+          © 2026 EchoGrow. All rights reserved.
+        </Link>
+      </div>
     </footer>
   );
 }

@@ -1,6 +1,10 @@
 import Link from "next/link";
+import { verifyAdminSession } from "@/lib/auth";
+import { logoutAdminAction } from "@/actions/admin";
 
-export default function Navbar() {
+export default async function Navbar() {
+  const isAuthorized = await verifyAdminSession();
+
   return (
     <nav className="w-full px-6 md:px-12 py-6 flex items-center justify-between bg-white border-b border-gray-100">
       <div className="flex items-center gap-2">
@@ -23,13 +27,28 @@ export default function Navbar() {
       </div>
       
       <div className="flex items-center gap-4">
-        <Link href="/login" className="hidden md:block text-sm font-medium py-2 border border-gray-200 rounded-full hover:bg-gray-50 transition-colors whitespace-nowrap px-6">
-          Login
-        </Link>
-        <Link href="/contact" className="text-sm font-medium px-5 py-2.5 bg-primary text-white rounded-full hover:bg-gray-800 transition-colors">
-          Book Free Consultation
-        </Link>
+        {isAuthorized ? (
+          <>
+            <Link href="/admin/dashboard" className="text-xs sm:text-sm font-medium py-2 px-3 sm:px-6 border border-gray-200 rounded-full hover:bg-gray-50 transition-colors whitespace-nowrap">
+              <span className="hidden sm:inline">Dashboard</span>
+              <span className="sm:hidden">Admin</span>
+            </Link>
+            <form action={logoutAdminAction} className="inline">
+              <button type="submit" className="text-xs sm:text-sm font-medium px-3 sm:px-5 py-2 sm:py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-full transition-colors cursor-pointer">
+                Logout
+              </button>
+            </form>
+          </>
+        ) : (
+          <>
+            <Link href="/contact" className="text-xs sm:text-sm font-medium px-4 sm:px-5 py-2 sm:py-2.5 bg-primary text-white rounded-full hover:bg-gray-800 transition-colors whitespace-nowrap">
+              <span className="hidden sm:inline">Book Free Consultation</span>
+              <span className="sm:hidden">Book Audit</span>
+            </Link>
+          </>
+        )}
       </div>
     </nav>
   );
 }
+

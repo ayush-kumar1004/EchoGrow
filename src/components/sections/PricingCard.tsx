@@ -38,6 +38,9 @@ export default function PricingCard({
         <div className={`text-sm font-medium mb-1 ${isPopular ? 'text-gray-400' : 'text-gray-500'}`}>{priceLabel}</div>
         <div className={`text-3xl font-bold ${isPopular ? 'text-white' : 'text-gray-900'}`}>{price}</div>
       </div>
+      <div className={`text-xs font-bold uppercase tracking-wider mb-4 ${isPopular ? 'text-gray-400' : 'text-gray-500'}`}>
+        What You Get
+      </div>
       <ul className="space-y-4 mb-8 flex-grow">
         {features.map((feature, i) => (
           <li key={i} className={`flex items-start gap-3 text-sm ${isPopular ? 'text-gray-200' : 'text-gray-700'}`}>
@@ -46,7 +49,7 @@ export default function PricingCard({
           </li>
         ))}
       </ul>
-      <Link href={buttonHref} className={`block w-full text-center py-3 rounded-full font-medium transition-colors mb-4 ${isPopular ? 'bg-white text-black hover:bg-gray-100' : price === 'Custom' ? 'border border-gray-300 text-gray-900 hover:bg-gray-50' : 'bg-black text-white hover:bg-gray-800'}`}>
+      <Link href={buttonHref} className={`block w-full text-center py-3 rounded-full font-medium transition-colors mb-4 ${isPopular ? 'bg-white text-black hover:bg-gray-100' : price.toLowerCase().includes('custom') ? 'border border-gray-300 text-gray-900 hover:bg-gray-50' : 'bg-black text-white hover:bg-gray-800'}`}>
         {buttonText}
       </Link>
       <p className="text-xs text-gray-400 text-center leading-relaxed">{footnote}</p>

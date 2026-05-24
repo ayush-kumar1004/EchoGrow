@@ -91,23 +91,23 @@ export default function Home() {
               </div>
               
               {/* Floating elements suggesting marketing assets */}
-              <div className="absolute top-1/4 left-0 bg-white p-3 rounded-2xl shadow-lg border border-gray-100 flex items-center gap-2 transform -translate-x-4">
-                <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-500">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path></svg>
+              <div className="absolute top-1/4 left-0 bg-white p-2 sm:p-3 rounded-2xl shadow-lg border border-gray-100 flex items-center gap-2 transform -translate-x-2 sm:-translate-x-4">
+                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 shrink-0">
+                  <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path></svg>
                 </div>
-                <span className="text-xs font-semibold">Reel Views</span>
+                <span className="text-[10px] sm:text-xs font-semibold hidden sm:inline">Reel Views</span>
               </div>
               
-              <div className="absolute top-1/3 right-0 bg-white p-3 rounded-2xl shadow-lg border border-gray-100 flex items-center gap-2 transform translate-x-4">
-                <div className="w-8 h-8 rounded-full bg-green-50 flex items-center justify-center text-green-500">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path></svg>
+              <div className="absolute top-1/3 right-0 bg-white p-2 sm:p-3 rounded-2xl shadow-lg border border-gray-100 flex items-center gap-2 transform translate-x-2 sm:translate-x-4">
+                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-green-50 flex items-center justify-center text-green-500 shrink-0">
+                  <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path></svg>
                 </div>
-                <span className="text-xs font-semibold">Leads Gen</span>
+                <span className="text-[10px] sm:text-xs font-semibold hidden sm:inline">Leads Gen</span>
               </div>
               
               {/* Central Play Button for Case Study */}
-              <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-primary px-6 py-3 rounded-full font-semibold shadow-xl flex items-center gap-2 hover:scale-105 transition-transform z-20">
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+              <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-primary px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-semibold shadow-xl flex items-center gap-2 hover:scale-105 transition-transform z-20 text-xs sm:text-sm whitespace-nowrap">
+                <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
                 Play Case Study
               </button>
             </div>
